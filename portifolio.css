@@ -67,7 +67,6 @@ p {
 }
 /* small */
 header {
-  max-width: max-content;
   position: fixed;
   top: 0;
   left: 0;
@@ -142,7 +141,6 @@ header {
 /* big */
 @media screen and (min-width: 1000px) {
   header {
-    max-width: 1170px;
     margin: 0 auto;
     position: fixed;
     top: 0;
