@@ -239,7 +239,7 @@ section {
 }
 .firstt {
   margin-top: 3rem;
-  font-size: 15px;
+  font-size: 20px;
   padding-top: 3rem;
   padding-bottom: 1rem;
   color: rgb(54, 50, 50);
@@ -349,8 +349,6 @@ section {
   margin-right: auto;
 }
 .sec-cont {
-  width: 100%;
-  height: 100%;
   margin-top: 1rem;
   background: #fff;
   border-radius: 0.5rem;
@@ -358,6 +356,7 @@ section {
   border-radius: 0.5rem;
   transition: all 0.3s linear;
   padding: 3rem;
+ 
   grid-gap: 40px;
   display: grid;
   grid-template-columns: auto;
@@ -372,7 +371,7 @@ section {
   padding-bottom: 2rem;
   border-radius: 0.6rem;
   padding: 2rem;
-  width: 20rem;
+  width: 100%;
 }
 .sec-cont .card i {
   font-size: 50px;
