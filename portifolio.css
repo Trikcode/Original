@@ -364,7 +364,7 @@ section {
 }
 
 .sec-cont .card {
-  height: 20rem;
+  height: 100%;
   background: white;
   box-shadow: 0 5px 15px rgba(56, 54, 170, 0.4);
   text-align: center;
@@ -390,8 +390,7 @@ section {
   font-weight: 530;
 }
 .done {
-  width: 100%;
-  height: 100%;
+
   margin-top: 1rem;
   background: #fff;
   border-radius: 0.5rem;
@@ -405,12 +404,12 @@ section {
   padding-right: 15rem;
 }
 .done .card {
-  height: 20rem;
+  height: 100%;
   background: white;
   box-shadow: 0 5px 15px rgba(56, 54, 170, 0.4);
   text-align: center;
   padding-bottom: 2rem;
-  width: 20rem;
+  width: 100%;
 }
 
 @media screen and (min-width: 576px) {
@@ -701,6 +700,8 @@ textarea {
   padding: 8px;
 }
 .copyright {
+  width:100%;
+  height:100%;
   color: #fff;
   border-radius: 0.3rem;
   padding-top: 1rem;
