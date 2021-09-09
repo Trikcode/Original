@@ -574,7 +574,7 @@ textarea {
 .user {
   border-radius: 0.5rem;
   font-family: 'Roboto Condensed';
-
+width:100%;
   font-size: 14px;
   height: 30px;
   display: block;
