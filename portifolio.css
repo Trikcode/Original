@@ -270,7 +270,7 @@ section {
 .heading {
   margin-bottom: 4rem;
 }
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 576px) {
   .heading {
     text-align: left;
     margin-right: 2rem;
