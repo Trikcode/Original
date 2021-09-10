@@ -504,8 +504,8 @@ section {
 .mode {
   display: none;
   position: fixed;
-  height: 10rem;
-  width: 10rem;
+  height: 8rem;
+  width: 8rem;
   padding-top: 4rem;
   border-radius: 0.5rem;
   top: 70px;
@@ -710,10 +710,11 @@ width:100%;
 
 .top i {
   border-radius: 0.3rem;
-  font-size: 40px;
+  font-size: 25px;
   background: rgb(167, 39, 167);
   color: white;
   width: fit-content;
+  margin-right: 2rem;
 }
 .area {
   font-family: 'Roboto Condensed';
