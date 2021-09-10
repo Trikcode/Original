@@ -252,7 +252,7 @@ section {
   font-size: 20px;
 }
 .secondd {
-  animation: type 6s steps(36);
+  animation: type 9s steps(36);
   overflow: hidden;
   white-space: nowrap;
   width: 36ch;
