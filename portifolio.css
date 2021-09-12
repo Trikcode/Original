@@ -218,6 +218,20 @@ section {
 .img-container {
   position: fixed;
 }
+.mee {
+  position: static;
+  display: flex;
+  justify-content: space-between;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.ayesiga {
+  margin-top: 3rem;
+  width: 30%;
+  height: 40%;
+  border-radius: 100%;
+  object-fit: cover;
+}
 
 .about {
   width: 100%;
@@ -286,6 +300,16 @@ section {
     font-size: 80px;
     color: rgb(221, 96, 221);
     font-family: 'Roboto Condensed';
+  }
+   }
+  .ayesiga {
+    margin-top: 0rem;
+    width: 30%;
+    height: 20%;
+    object-fit: cover;
+  }
+  .mee {
+    padding-right: 10rem;
   }
 }
 
