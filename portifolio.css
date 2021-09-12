@@ -232,7 +232,6 @@ section {
   border-radius: 100%;
   object-fit: cover;
 }
-
 .about {
   width: 100%;
   height: 100%;
@@ -243,7 +242,7 @@ section {
   z-index: 500;
 }
 .heading {
-  padding-top: 2rem;
+  padding-top: 1rem;
   display: block;
   text-align: left;
   justify-content: space-between;
@@ -253,8 +252,8 @@ section {
 }
 .firstt {
   margin-top: 3rem;
-  font-size: 20px;
-  padding-top: 3rem;
+  font-size: 15px;
+  padding-top: 3.5rem;
   padding-bottom: 1rem;
   color: rgb(54, 50, 50);
   font-family: 'Roboto Condensed';
@@ -266,7 +265,7 @@ section {
   font-size: 20px;
 }
 .secondd {
-  animation: type 5s steps(36);
+  animation: type 6s steps(36);
   overflow: hidden;
   white-space: nowrap;
   width: 36ch;
@@ -301,7 +300,6 @@ section {
     color: rgb(221, 96, 221);
     font-family: 'Roboto Condensed';
   }
-   }
   .ayesiga {
     margin-top: 0rem;
     width: 30%;
