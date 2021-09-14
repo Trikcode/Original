@@ -33,6 +33,23 @@ h2 {
   font-size: 1.5rem;
 }
 h3 {
+  @media screen and (max-width: 576px) {
+  .done,
+  .sec-cont {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+  }
+  .done .card,
+  .sec-cont .card {
+    width: 100%;
+    height: 100%;
+  }
+  .done .card .loading {
+    width: 50%;
+    height: 100%;
+  }
+}
   font-size: 1.25rem;
 }
 h4 {
