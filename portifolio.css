@@ -283,33 +283,6 @@ section {
 .heading {
   margin-bottom: 4rem;
 }
-@media screen and (min-width: 576px) {
-  .heading {
-    text-align: left;
-    margin-right: 2rem;
-  }
-  .firstt {
-    font-size: 80px;
-    padding-top: 1rem;
-    padding-bottom: 2rem;
-    color: rgb(54, 50, 50);
-    font-family: 'Roboto Condensed';
-  }
-  .secondd {
-    font-size: 80px;
-    color: rgb(221, 96, 221);
-    font-family: 'Roboto Condensed';
-  }
-  .ayesiga {
-    margin-top: 0rem;
-    width: 30%;
-    height: 20%;
-    object-fit: cover;
-  }
-  .mee {
-    padding-right: 10rem;
-  }
-}
 
 .projects {
   padding: 3rem;
@@ -382,7 +355,7 @@ section {
   grid-gap: 40px;
   display: grid;
   grid-template-columns: auto;
-  padding-right: 15rem;
+/*   padding-right: 15rem; */
 }
 
 .sec-cont .card {
@@ -424,7 +397,7 @@ section {
   grid-gap: 40px;
   display: grid;
   grid-template-columns: auto;
-  padding-right: 15rem;
+/*   padding-right: 15rem; */
 }
 .done .card {
   height: 20rem;
@@ -437,11 +410,15 @@ section {
 
 @media screen and (min-width: 576px) {
   .sec-cont {
+    width: 100%;
+    height: 100%;
     grid-gap: 50px;
     display: grid;
     grid-template-columns: auto auto auto;
   }
   .done {
+    width: 100%;
+    height: 100%;
     grid-gap: 50px;
     display: grid;
     grid-template-columns: auto auto auto;
@@ -784,5 +761,36 @@ width:100%;
   }
   .submit{
     margin-left: 1.5rem;
+  }
+}
+@media screen and (min-width: 576px) {
+  .about{
+    width: 100%;
+    height: 100%;
+  }
+  .heading {
+    text-align: left;
+    margin-right: 2rem;
+  }
+  .firstt {
+    font-size: 80px;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    color: rgb(54, 50, 50);
+    font-family: 'Roboto Condensed';
+  }
+  .secondd {
+    font-size: 80px;
+    color: rgb(221, 96, 221);
+    font-family: 'Roboto Condensed';
+  }
+  .ayesiga {
+    margin-top: 0rem;
+    width: 30%;
+    height: 20%;
+    object-fit: cover;
+  }
+  .mee {
+    padding-right: 10rem;
   }
 }
