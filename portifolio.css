@@ -372,7 +372,7 @@ section {
   grid-gap: 40px;
   display: grid;
   grid-template-columns: auto;
-/*   padding-right: 15rem; */
+
 }
 
 .sec-cont .card {
@@ -414,7 +414,7 @@ section {
   grid-gap: 40px;
   display: grid;
   grid-template-columns: auto;
-/*   padding-right: 15rem; */
+ 
 }
 .done .card {
   height: 20rem;
@@ -769,6 +769,10 @@ width:100%;
   padding: 5px;
 }
 @media screen and (max-width: 576px) {
+  .done, 
+  .sec-cont{
+     padding-right: 15rem;
+  }
   .user {
     width: 10rem;
   }
