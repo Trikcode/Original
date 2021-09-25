@@ -33,23 +33,6 @@ h2 {
   font-size: 1.5rem;
 }
 h3 {
-  @media screen and (max-width: 576px) {
-  .done,
-  .sec-cont {
-    width: 100%;
-    height: 100%;
-    text-align: center;
-  }
-  .done .card,
-  .sec-cont .card {
-    width: 100%;
-    height: 100%;
-  }
-  .done .card .loading {
-    width: 50%;
-    height: 100%;
-  }
-}
   font-size: 1.25rem;
 }
 h4 {
@@ -91,7 +74,7 @@ header {
   align-items: center;
   transition: 0.6s;
   z-index: 100000;
-  padding-right: 2.1rem;
+  padding-right: 3rem;
 }
 .nav-header {
   display: flex;
@@ -131,6 +114,8 @@ header {
   font-size: 20px;
   text-transform: capitalize;
   display: block;
+
+  font-family: 'Roboto Condensed';
 
   padding: 0.5rem 1rem;
 }
@@ -224,17 +209,31 @@ section {
   width: 100%;
   height: 100vh;
 }
-.container {
+
+.get {
+  height: 100%;
+  width: 100%;
+}
+
+.headit {
   text-align: center;
+  height: 100%;
+  width: 100%;
+  top: 20%;
+  left: 0;
+  margin-bottom: 0;
 }
 .photo {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
-.img-container {
-  position: fixed;
+@media screen and (min-width: 992px) {
+  .headit {
+    position: absolute;
+  }
 }
+
 .mee {
   position: static;
   display: flex;
@@ -243,23 +242,13 @@ section {
   padding-right: 1rem;
 }
 .ayesiga {
-  margin-top: 3rem;
   width: 30%;
   height: 40%;
   border-radius: 100%;
   object-fit: cover;
 }
-.about {
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  position: relative;
-  top: 0;
-  left: 0;
-  z-index: 500;
-}
+
 .heading {
-  padding-top: 1rem;
   display: block;
   text-align: left;
   justify-content: space-between;
@@ -268,7 +257,6 @@ section {
   padding-left: 0.8rem;
 }
 .firstt {
-  margin-top: 3rem;
   font-size: 15px;
   padding-top: 3.5rem;
   padding-bottom: 1rem;
@@ -282,7 +270,7 @@ section {
   font-size: 20px;
 }
 .secondd {
-  animation: type 6s steps(36);
+  animation: type 3s steps(36);
   overflow: hidden;
   white-space: nowrap;
   width: 36ch;
@@ -299,6 +287,24 @@ section {
 }
 .heading {
   margin-bottom: 4rem;
+}
+@media screen and (min-width: 1300px) {
+  .headit {
+    justify-content: space-evenly;
+    display: flex;
+  }
+  .ayesiga {
+    margin-left: 25rem;
+  }
+}
+@media screen and (min-width: 1800px) {
+  .headit {
+    justify-content: space-evenly;
+    display: flex;
+  }
+  .ayesiga {
+    margin-left: 100rem;
+  }
 }
 
 .projects {
@@ -347,6 +353,7 @@ section {
   color: white;
 }
 .services {
+  text-align: center;
   margin-top: 2.5rem;
   padding-top: 2rem;
 }
@@ -360,7 +367,10 @@ section {
   margin-left: auto;
   margin-right: auto;
 }
-.sec-cont {
+.sec-cont,
+.done {
+  width: 100%;
+  height: 100%;
   margin-top: 1rem;
   background: #fff;
   border-radius: 0.5rem;
@@ -368,11 +378,10 @@ section {
   border-radius: 0.5rem;
   transition: all 0.3s linear;
   padding: 3rem;
- 
   grid-gap: 40px;
   display: grid;
   grid-template-columns: auto;
-
+  /* padding-right: 15rem; */
 }
 
 .sec-cont .card {
@@ -402,75 +411,60 @@ section {
   font-weight: 530;
 }
 
-.done {
-
-  margin-top: 1rem;
-  background: #fff;
-  border-radius: 0.5rem;
-  box-shadow: 0 5px 15px rgba(94, 35, 35, 0.1);
-  border-radius: 0.5rem;
-  transition: all 0.3s linear;
-  padding: 3rem;
-  grid-gap: 40px;
-  display: grid;
-  grid-template-columns: auto;
- 
-}
 .done .card {
-  height: 20rem;
   background: white;
   box-shadow: 0 5px 15px rgba(56, 54, 170, 0.4);
   text-align: center;
-  padding-bottom: 2rem;
-  width: 140%;
 }
 
-@media screen and (min-width: 576px) {
-  .sec-cont {
-    width: 100%;
-    height: 100%;
-    grid-gap: 50px;
-    display: grid;
-    grid-template-columns: auto auto auto;
-  }
+@media screen and (min-width: 992px) {
+  .sec-cont,
   .done {
-    width: 100%;
-    height: 100%;
     grid-gap: 50px;
     display: grid;
     grid-template-columns: auto auto auto;
   }
+
   .heading {
     display: flex;
     justify-content: space-between;
-    padding-top: 10rem;
     padding-bottom: 15rem;
-    /* padding-left: 3rem;
-    padding-right: 3rem; */
+
     text-align: center;
   }
-  
+  .projects {
+    margin-top: 5rem;
+  }
+  .headit {
+    display: flex;
+    padding-left: 8rem;
+
+    justify-content: space-evenly;
+  }
+}
+@media screen and (min-width: 992px) {
+  .sec-cont .card {
+    height: 100%;
+    width: 100%;
+  }
+  .done .card {
+    height: 100%;
+    width: 100%;
+  }
 }
 
-.now {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
 .box {
   position: relative;
   width: 100%;
-  height: 80%;
+  height: 70%;
   background: #000;
   transform-style: preserve-3d;
 }
 .imgBx {
-  position: absolute;
-  top: 0;
+  top: 50%;
   left: 0;
   width: 100%;
   height: 100%;
-  transform-style: preserve-3d;
 }
 .contentBx {
   position: absolute;
@@ -487,7 +481,8 @@ section {
   transform: translateZ(20px) scaleY(1);
 }
 .extra {
-  padding: 0.8rem;
+  padding: 1rem;
+  /* margin-bottom: 1rem; */
   display: flex;
   justify-content: space-between;
 }
@@ -503,29 +498,15 @@ section {
   color: rgb(221, 96, 221);
   font-weight: 550;
 }
-@media screen and (min-width: 992px){
-   .sec-cont .card {
-    height: 20rem;
-    width: 20rem;
-  }
-  .done .card {
-    height: 20rem;
-    width: 20rem;
-  }
-  .extra{
-    padding:2rem;
-  }
-  
-}
 .mode {
   display: none;
   position: fixed;
-  height: 8rem;
-  width: 8rem;
+  height: 45%;
+  width: 45%;
   padding-top: 4rem;
   border-radius: 0.5rem;
-  top: 70px;
-  left: 70px;
+  top: 25%;
+  left: 25%;
   transition: 0.6s;
   background: white;
   box-shadow: 0 5px 15px rgba(28, 27, 110, 0.4);
@@ -541,13 +522,15 @@ section {
   background: rgba(255, 255, 255, 0.8)
     url('https://i.stack.imgur.com/FhHRx.gif') 50% 50% no-repeat;
 }
+.now {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
 
 /* Form */
 
 .form-container {
-   margin-right: 8rem;
-  width: 100%;
-  height: 100%;
   margin-top: 1rem;
   background: #fff;
   border-radius: 0.5rem;
@@ -558,12 +541,17 @@ section {
   text-align: center;
   padding-right: 4rem;
 }
-.form{
-  margin-right: 8rem;
+.form {
   width: 100%;
   height: 100%;
 }
-
+@media screen and (min-width: 992px) {
+  .form-container {
+    text-align: center;
+    padding-left: 20rem;
+    padding-right: 20rem;
+  }
+}
 form h2 {
   font-family: 'Roboto Condensed';
 }
@@ -590,13 +578,14 @@ textarea {
 .user {
   border-radius: 0.5rem;
   font-family: 'Roboto Condensed';
-width:100%;
+
   font-size: 14px;
   height: 30px;
   display: block;
   padding-left: 6px;
   border: purple dashed 1px;
 }
+
 .success {
   border: 2px solid rgb(26, 167, 26);
 }
@@ -612,6 +601,18 @@ width:100%;
   border-radius: 2rem;
   border: none;
   background: rgb(221, 96, 221);
+}
+@media screen and (max-width: 576px) {
+  .user {
+    width: 10rem;
+  }
+  textarea {
+    margin-left: 0;
+    width: 10rem;
+  }
+  .submit {
+    margin-left: 0;
+  }
 }
 .reviews {
   margin-top: 1rem;
@@ -700,15 +701,28 @@ width:100%;
   color: rgb(221, 96, 221);
 }
 @media screen and (min-width: 800px) {
-  .form-container {
-    padding-left: 20rem;
-    padding-right: 20rem;
-  }
   .reviews {
     padding: 4rem;
   }
   .review {
     padding: 8rem;
+  }
+}
+@media screen and (max-width: 576px) {
+  .done,
+  .sec-cont {
+    width: 100%;
+    height: 100%;
+    text-align: center;
+  }
+  .done .card,
+  .sec-cont .card {
+    width: 100%;
+    height: 100%;
+  }
+  .done .card .loading {
+    width: 50%;
+    height: 100%;
   }
 }
 .icons {
@@ -721,16 +735,14 @@ width:100%;
   display: flex;
   justify-content: space-between;
   margin-bottom: 1rem;
-  padding-right: 8rem;
 }
 
 .top i {
   border-radius: 0.3rem;
-  font-size: 25px;
+  font-size: 40px;
   background: rgb(167, 39, 167);
   color: white;
   width: fit-content;
-  margin-right: 2rem;
 }
 .area {
   font-family: 'Roboto Condensed';
@@ -738,8 +750,6 @@ width:100%;
   padding: 8px;
 }
 .copyright {
-  width:100%;
-  height:100%;
   color: #fff;
   border-radius: 0.3rem;
   padding-top: 1rem;
@@ -769,9 +779,9 @@ width:100%;
   padding: 5px;
 }
 @media screen and (max-width: 576px) {
-  .done, 
-  .sec-cont{
-     padding-right: 15rem;
+  .done,
+  .sec-cont {
+    padding-right: 15rem;
   }
   .user {
     width: 10rem;
@@ -780,17 +790,13 @@ width:100%;
     margin-left: 0;
     width: 10rem;
   }
-  .submit{
+  .submit {
     margin-left: 1.5rem;
   }
 }
 @media screen and (min-width: 576px) {
-  .about{
-    width: 100%;
-    height: 100%;
-  }
   .heading {
-    text-align: left;
+    /* text-align: left; */
     margin-right: 2rem;
   }
   .firstt {
@@ -810,8 +816,5 @@ width:100%;
     width: 30%;
     height: 20%;
     object-fit: cover;
-  }
-  .mee {
-    padding-right: 10rem;
   }
 }
